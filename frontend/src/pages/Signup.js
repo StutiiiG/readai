@@ -146,7 +146,7 @@ export default function Signup() {
             Join Thousands of Researchers
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Graduate students, PhD candidates, and industry researchers trust DeepTutor 
+            Graduate students, PhD candidates, and industry researchers trust ReadAI 
             to accelerate their document analysis workflow.
           </p>
           <div className="mt-8 flex justify-center gap-6 text-sm text-muted-foreground">

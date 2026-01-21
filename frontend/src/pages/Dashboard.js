@@ -340,7 +340,7 @@ export default function Dashboard() {
                 <BookOpen className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="font-semibold text-foreground" style={{ fontFamily: 'Fraunces, serif' }}>
-                DeepTutor
+                ReadAI
               </span>
             </div>
             <Button
@@ -440,7 +440,7 @@ export default function Dashboard() {
           >
             <Menu className="w-5 h-5" />
           </Button>
-          <span className="font-medium">{currentSession?.title || 'DeepTutor'}</span>
+          <span className="font-medium">{currentSession?.title || 'ReadAI'}</span>
         </div>
 
         {!currentSession ? (
@@ -450,7 +450,7 @@ export default function Dashboard() {
               <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
                 <BookOpen className="w-10 h-10 text-primary" />
               </div>
-              <h2 className="text-2xl font-medium text-foreground mb-3">Welcome to DeepTutor</h2>
+              <h2 className="text-2xl font-medium text-foreground mb-3">Welcome to ReadAI</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Start a new session to upload your research documents and begin asking questions.
               </p>

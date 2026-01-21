@@ -434,7 +434,7 @@ async def chat(data: MessageCreate, user: dict = Depends(get_current_user)):
         history_text += f"\n{role}: {msg['content']}"
     
     # Generate AI response
-    system_prompt = """You are DeepTutor, an expert AI research assistant helping researchers and graduate students analyze academic documents. 
+    system_prompt = """You are ReadAI, an expert AI research assistant helping researchers and graduate students analyze academic documents. 
 
 Your responses must:
 1. Be accurate, comprehensive, and directly address the user's question
@@ -515,7 +515,7 @@ Note: No documents have been uploaded to this session yet. Please let the user k
 
 @api_router.get("/")
 async def root():
-    return {"message": "DeepTutor API is running"}
+    return {"message": "ReadAI API is running"}
 
 @api_router.get("/health")
 async def health():

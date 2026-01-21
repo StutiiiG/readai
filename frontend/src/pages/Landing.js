@@ -13,7 +13,7 @@ export default function Landing() {
               <BookOpen className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-xl font-semibold text-foreground" style={{ fontFamily: 'Fraunces, serif' }}>
-              DeepTutor
+              ReadAI
             </span>
           </Link>
           
@@ -44,7 +44,7 @@ export default function Landing() {
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
                 Tired of jumping between your research tools just to get answers? 
-                DeepTutor combines your documents & AI to create the optimal research workflow.
+                ReadAI combines your documents & AI to create the optimal research workflow.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/signup">
@@ -163,7 +163,7 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-foreground mb-4">
-              How DeepTutor Works
+              How ReadAI Works
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Three simple steps to transform your research workflow
@@ -182,7 +182,7 @@ export default function Landing() {
                 step: "02",
                 icon: Search,
                 title: "Ask Your Questions",
-                description: "Type natural language questions about your documents. DeepTutor understands context."
+                description: "Type natural language questions about your documents. ReadAI understands context."
               },
               {
                 step: "03",
@@ -237,10 +237,10 @@ export default function Landing() {
             <div className="w-6 h-6 rounded bg-primary flex items-center justify-center">
               <BookOpen className="w-4 h-4 text-primary-foreground" />
             </div>
-            <span className="font-medium">DeepTutor</span>
+            <span className="font-medium">ReadAI</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2024 DeepTutor. Built for researchers, by researchers.
+            © 2024 ReadAI. Built for researchers, by researchers.
           </p>
         </div>
       </footer>
