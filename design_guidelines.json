@@ -1,0 +1,150 @@
+{
+  "identity": {
+    "name": "DeepTutor",
+    "persona": "The Modern Academic",
+    "vibe": "Intellectual, Focused, Swiss-Minimalist, Trustworthy",
+    "description": "A research assistant that feels like a pristine library, not a chaotic tech dashboard."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Fraunces, 'Playfair Display', serif",
+      "body": "'IBM Plex Sans', 'Inter', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-light tracking-tight",
+      "h2": "text-3xl md:text-4xl font-normal tracking-tight",
+      "h3": "text-2xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm font-medium tracking-wide uppercase"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#F9F9F7",
+      "foreground": "#1A1A1A",
+      "primary": "#0F4C5C",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E0E0D8",
+      "secondary_foreground": "#1A1A1A",
+      "accent": "#E36414",
+      "accent_foreground": "#FFFFFF",
+      "muted": "#F0F0EB",
+      "muted_foreground": "#666660",
+      "border": "#E5E5E0",
+      "input": "#E5E5E0",
+      "ring": "#0F4C5C"
+    },
+    "dark_mode_palette": {
+      "background": "#0A0A0A",
+      "foreground": "#E5E5E5",
+      "primary": "#4ECDC4",
+      "primary_foreground": "#000000",
+      "secondary": "#1F1F1F",
+      "secondary_foreground": "#FFFFFF",
+      "accent": "#FF6B6B",
+      "muted": "#1A1A1A",
+      "border": "#2A2A2A"
+    },
+    "usage": {
+      "citations": "Use Accent (#E36414) for citation numbers to make them pop like margin notes.",
+      "sidebar": "Use Muted (#F0F0EB) for the sidebar background to separate it from the main 'paper' area.",
+      "ai_response": "Keep AI text in Foreground (#1A1A1A) on Background (#F9F9F7) for maximum readability."
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle noise texture to the background to simulate high-quality paper. opacity-50 mix-blend-multiply.",
+    "shadows": {
+      "card": "0 1px 2px rgba(0,0,0,0.05)",
+      "floating": "0 12px 40px -12px rgba(0,0,0,0.15)",
+      "citation_hover": "0 4px 12px rgba(227, 100, 20, 0.2)"
+    },
+    "borders": "1px solid var(--border). Use sharp corners (rounded-sm) or minimal rounding (rounded-md) for a technical feel. Avoid fully rounded 'pill' buttons unless for tags.",
+    "glassmorphism": "Use sparingly. Only for sticky headers or floating citation previews. backdrop-blur-md bg-white/80."
+  },
+  "layout_strategy": {
+    "dashboard": {
+      "structure": "Fixed Sidebar (260px) + Main Content Area (Flex-1).",
+      "mobile": "Sidebar becomes a Sheet/Drawer.",
+      "grid": "Use a 'Bento' grid for the 'New Session' screen showing recent files, suggested queries, and stats."
+    },
+    "chat_interface": {
+      "container": "max-w-3xl mx-auto w-full",
+      "messages": "Distinct separation between User (aligned right, subtle bg) and AI (aligned left, transparent bg, full width).",
+      "input_area": "Floating at the bottom, detached from the edge, with a strong shadow."
+    },
+    "file_manager": {
+      "view": "Grid of cards with file type icons (PDF, DOCX) prominent.",
+      "upload": "Large drag-and-drop zone with dashed border and 'upload' illustration."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-6 py-2 font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-md px-6 py-2 font-medium",
+      "ghost": "hover:bg-muted text-muted-foreground hover:text-foreground rounded-md px-4 py-2"
+    },
+    "cards": {
+      "base": "bg-card text-card-foreground border border-border shadow-sm rounded-lg p-6",
+      "hover_effect": "hover:border-primary/50 transition-colors cursor-pointer"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b-2 border-input focus:border-primary focus:ring-0 rounded-none px-0 py-2 transition-colors placeholder:text-muted-foreground/50"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1767580392321-cba72872e551?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHNoYXBlcyUyMG1pbmltYWwlMjBsaWdodCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzY5MDI5MzIwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract light geometric pattern for subtle backgrounds",
+      "category": "background"
+    },
+    "researcher_hero": {
+      "url": "https://images.unsplash.com/photo-1684488624316-774ea1824d97?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxmb2N1c2VkJTIwcmVzZWFyY2hlciUyMHdvcmtpbmclMjBicmlnaHQlMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzY5MDI5MzIyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Focused researcher working on laptop",
+      "category": "hero"
+    },
+    "upload_illustration": {
+      "url": "https://images.unsplash.com/photo-1761449779811-33f7c48ed367?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHNoYXBlcyUyMG1pbmltYWwlMjBsaWdodCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzY5MDI5MzIwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract flow for upload area visual interest",
+      "category": "ui_element"
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": "Implement the 'Modern Academic' persona. Avoid generic SaaS templates. Think 'Digital Library' meets 'Swiss Design'.",
+    "setup": [
+      "Install fonts: IBM Plex Sans and Fraunces.",
+      "Configure Tailwind colors in tailwind.config.js using the palette provided.",
+      "Add the noise texture to the body background in index.css."
+    ],
+    "specific_pages": {
+      "landing": "Use the 'researcher_hero' image with a split layout. Typography should be big and bold (Fraunces).",
+      "dashboard": "Implement the Sidebar with the 'Muted' background. The main chat area should be 'Background' (#F9F9F7).",
+      "chat": "Ensure citations are clickable and distinct. Use the 'Accent' color for the citation markers [1], [2]."
+    },
+    "accessibility": "Ensure text contrast is high. The primary text is #1A1A1A, which is safe on #F9F9F7.",
+    "testing": "Add data-testid to all interactive elements (buttons, inputs, file cards)."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
