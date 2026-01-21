@@ -62,31 +62,41 @@ const CitationMarker = ({ number, source }) => (
   </TooltipProvider>
 );
 
+// Process citation text
+const processCitationText = (text, citations) => {
+  if (typeof text !== 'string') return text;
+  
+  return text.split(/(\[\d+\])/g).map((part, i) => {
+    const match = part.match(/\[(\d+)\]/);
+    if (match) {
+      const num = parseInt(match[1]);
+      const citation = citations.find(c => c.number === num);
+      return <CitationMarker key={i} number={num} source={citation?.source || 'Unknown'} />;
+    }
+    return part;
+  });
+};
+
+// Paragraph component for ReactMarkdown
+const createParagraphRenderer = (citations) => {
+  const ParagraphRenderer = ({ children }) => {
+    if (typeof children === 'string') {
+      return <p>{processCitationText(children, citations)}</p>;
+    }
+    return <p>{children}</p>;
+  };
+  return ParagraphRenderer;
+};
+
 // Process message content to render citations
 const MessageContent = ({ content, citations }) => {
-  const parts = content.split(/(\[\d+\])/g);
+  const components = {
+    p: createParagraphRenderer(citations)
+  };
   
   return (
     <div className="prose-content">
-      <ReactMarkdown
-        components={{
-          p: ({ children }) => {
-            if (typeof children === 'string') {
-              const processed = children.split(/(\[\d+\])/g).map((part, i) => {
-                const match = part.match(/\[(\d+)\]/);
-                if (match) {
-                  const num = parseInt(match[1]);
-                  const citation = citations.find(c => c.number === num);
-                  return <CitationMarker key={i} number={num} source={citation?.source || 'Unknown'} />;
-                }
-                return part;
-              });
-              return <p>{processed}</p>;
-            }
-            return <p>{children}</p>;
-          }
-        }}
-      >
+      <ReactMarkdown components={components}>
         {content}
       </ReactMarkdown>
     </div>
@@ -127,6 +137,7 @@ export default function Dashboard() {
   // Fetch sessions on mount
   useEffect(() => {
     fetchSessions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Fetch messages and files when session changes
@@ -135,6 +146,7 @@ export default function Dashboard() {
       fetchMessages(currentSession.id);
       fetchFiles(currentSession.id);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSession]);
 
   const fetchSessions = async () => {
