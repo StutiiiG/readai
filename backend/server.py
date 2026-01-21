@@ -173,7 +173,7 @@ async def extract_text_from_txt(file_path: str) -> str:
 async def process_image(file_path: str) -> str:
     try:
         with open(file_path, 'rb') as f:
-            image_data = base64.b64encode(f.read()).decode('utf-8')
+            _ = base64.b64encode(f.read()).decode('utf-8')
         return "[Image content - base64 encoded for analysis]"
     except Exception as e:
         logger.error(f"Error processing image: {e}")
