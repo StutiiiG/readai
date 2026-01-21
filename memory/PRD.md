@@ -1,13 +1,14 @@
-# DeepTutor - AI Research Assistant
+# ReadAI - AI Research Document Assistant
 
 ## Original Problem Statement
-Build a website like DeepTutor (https://deeptutor.knowhiz.us/) - an AI-powered research assistant to help industry researchers and graduate students save time switching between their file library and an AI tool. Make the results as accurate as possible and the UI beautiful and minimal.
+Build a website like DeepTutor - an AI-powered research assistant to help industry researchers and graduate students save time switching between their file library and an AI tool. Make the results as accurate as possible and the UI beautiful and minimal.
 
 ## User Choices
 - **AI Model**: Claude Sonnet 4.5 (via Emergent LLM Key)
 - **File Support**: PDF, DOCX, TXT, Images
 - **Core Features**: File upload + AI Q&A with citations
 - **Authentication**: JWT-based (email/password)
+- **App Name**: ReadAI
 
 ## Architecture
 
