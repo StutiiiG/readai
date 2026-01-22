@@ -18,7 +18,7 @@ from PIL import Image
 import io
 import base64
 import aiofiles
-from emergentintegrations.llm.chat import LlmChat, UserMessage
+import anthropic
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -34,7 +34,7 @@ JWT_ALGORITHM = "HS256"
 JWT_EXPIRATION_HOURS = 24
 
 # LLM Configuration
-EMERGENT_LLM_KEY = os.environ.get('EMERGENT_LLM_KEY')
+ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
 
 # File storage directory
 UPLOAD_DIR = ROOT_DIR / "uploads"
@@ -463,14 +463,16 @@ User question: {data.content}
 Note: No documents have been uploaded to this session yet. Please let the user know they should upload documents for analysis, but still try to help with their question if possible."""
 
     try:
-        chat_client = LlmChat(
-            api_key=EMERGENT_LLM_KEY,
-            session_id=f"deeptutor-{data.session_id}-{uuid.uuid4()}",
-            system_message=system_prompt
-        ).with_model("anthropic", "claude-sonnet-4-20250514")
-        
-        response = await chat_client.send_message(UserMessage(text=user_prompt))
-        ai_content = response
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        message = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=4096,
+            system=system_prompt,
+            messages=[
+                {"role": "user", "content": user_prompt}
+            ]
+        )
+        ai_content = message.content[0].text
     except Exception as e:
         logger.error(f"LLM Error: {e}")
         ai_content = "I apologize, but I encountered an error while processing your request. Please try again."
