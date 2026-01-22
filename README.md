@@ -1,4 +1,4 @@
-# ReadAI - AI-Powered Research Document Assistant
+# ReadAI : An AI-Powered Research Document Assistant
 
 <div align="center">
 
@@ -59,7 +59,7 @@ ReadAI is an intelligent research assistant designed for **graduate students**, 
 - Python 3.11+
 - Node.js 18+
 - MongoDB 4.5+
-- Claude API key (or Emergent LLM key)
+- Claude API key 
 
 ### Installation
 
@@ -90,7 +90,7 @@ Create `backend/.env`:
 MONGO_URL=mongodb://localhost:27017
 DB_NAME=readai
 JWT_SECRET=your-secure-secret-key
-EMERGENT_LLM_KEY=your-api-key  # or use your own Claude key
+CLAUDE_API_KEY=your-api-key  
 CORS_ORIGINS=http://localhost:3000
 ```
 
@@ -111,9 +111,9 @@ cd frontend
 yarn start
 ```
 
-Visit `http://localhost:3000` 🎉
+Visit `http://localhost:3000`
 
-## 📖 Usage
+## Usage
 
 1. **Create an Account** - Sign up with your email
 2. **Start a Session** - Click "New Session" in the sidebar
@@ -121,7 +121,7 @@ Visit `http://localhost:3000` 🎉
 4. **Ask Questions** - Type your question and get AI-powered answers
 5. **Review Citations** - Hover over [1], [2] to see sources
 
-## 🔌 API Reference
+##  API Reference
 
 ### Authentication
 
@@ -148,7 +148,7 @@ Visit `http://localhost:3000` 🎉
 | `/api/chat` | POST | Send message & get AI response |
 | `/api/messages/:session_id` | GET | Get chat history |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 readai/
@@ -165,7 +165,7 @@ readai/
 └── README.md
 ```
 
-## 🚢 Deployment
+## Deployment
 
 ### Docker (Recommended)
 
@@ -181,7 +181,7 @@ See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed guides on:
 - DigitalOcean
 - AWS/GCP
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) first.
 
@@ -191,13 +191,12 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
-- Inspired by [DeepTutor](https://deeptutor.knowhiz.us/)
 - Built with [Claude AI](https://anthropic.com) by Anthropic
 - UI components from [shadcn/ui](https://ui.shadcn.com)
 
