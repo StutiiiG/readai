@@ -240,7 +240,7 @@ export default function Landing() {
             <span className="font-medium">ReadAI</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2024 ReadAI. Built for researchers, by researchers.
+            © 2026 ReadAI by Stuti Gaonkar. Built by a researcher, for researchers.
           </p>
         </div>
       </footer>
