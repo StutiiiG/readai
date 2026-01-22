@@ -18,25 +18,25 @@
 
 ---
 
-## 🎯 What is ReadAI?
+##  What is ReadAI?
 
 ReadAI is an intelligent research assistant designed for **graduate students**, **PhD candidates**, and **industry researchers**. Upload your documents, ask questions in natural language, and get accurate answers with proper citations—all in one place.
 
 **Stop switching between your PDF reader and ChatGPT.** ReadAI brings them together.
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
-| 📄 **Multi-Format Upload** | Support for PDF, DOCX, TXT files and images |
-| 🤖 **Claude AI Integration** | Powered by Claude Sonnet 4.5 for accurate analysis |
-| 📚 **Citation Tracking** | Inline citations [1], [2] with source tooltips |
-| 💬 **Contextual Chat** | AI remembers your conversation and document context |
-| 🗂️ **Session Management** | Organize research into separate sessions |
-| 🔐 **Secure Auth** | JWT-based authentication with encrypted passwords |
-| 🎨 **Modern UI** | Clean, minimal academic design |
+|  **Multi-Format Upload** | Support for PDF, DOCX, TXT files and images |
+|  **Claude AI Integration** | Powered by Claude Sonnet 4.5 for accurate analysis |
+|  **Citation Tracking** | Inline citations [1], [2] with source tooltips |
+|  **Contextual Chat** | AI remembers your conversation and document context |
+|  **Session Management** | Organize research into separate sessions |
+|  **Secure Auth** | JWT-based authentication with encrypted passwords |
+|  **Modern UI** | Clean, minimal academic design |
 
-## 🖼️ Screenshots
+##  Screenshots
 
 <details>
 <summary>Click to view screenshots</summary>
@@ -52,7 +52,7 @@ ReadAI is an intelligent research assistant designed for **graduate students**, 
 
 </details>
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
