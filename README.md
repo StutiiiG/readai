@@ -204,8 +204,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[⬆ Back to Top](#readai---ai-powered-research-document-assistant)**
-
 Made with ❤️ for researchers everywhere
 
 </div>
