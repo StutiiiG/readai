@@ -17,3 +17,4 @@ starlette==0.37.2
 anyio==4.12.1
 dnspython==2.8.0
 email-validator==2.3.0
+PyJWT==2.10.1
