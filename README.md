@@ -42,7 +42,7 @@ ReadAI is an intelligent research assistant designed for **graduate students**, 
 <summary>Click to view screenshots</summary>
 
 ### Landing Page
-![Landing Page](docs/screenshots/Landing_Page.png)
+![Landing Page](docs/screenshots/Landing.png)
 
 ### Dashboard with Chat
 ![Dashboard](docs/screenshots/Dashboard.png)
