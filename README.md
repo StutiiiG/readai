@@ -12,6 +12,8 @@
 
 **Transform how you read and understand research documents with AI-powered analysis and citations.**
 
+Live Demo: https://readai-tau.vercel.app/
+
 </div>
 
 ---
