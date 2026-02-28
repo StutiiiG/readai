@@ -38,9 +38,6 @@ ReadAI is an intelligent research assistant designed for **graduate students**, 
 
 ##  Screenshots
 
-<details>
-<summary>Click to view screenshots</summary>
-
 ### Landing Page
 ![Landing Page](docs/screenshots/Landing.png)
 
@@ -49,8 +46,6 @@ ReadAI is an intelligent research assistant designed for **graduate students**, 
 
 ### File Upload
 ![Upload](docs/screenshots/Upload.png)
-
-</details>
 
 ##  Quick Start
 
