@@ -12,8 +12,6 @@
 
 **Transform how you read and understand research documents with AI-powered analysis and citations.**
 
-[Demo](#demo) • [Features](#features) • [Installation](#installation) • [Usage](#usage) • [API](#api-reference) • [Contributing](#contributing)
-
 </div>
 
 ---
