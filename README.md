@@ -193,11 +193,6 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-##  Acknowledgments
-
-- Built with [Claude AI](https://anthropic.com) by Anthropic
-- UI components from [shadcn/ui](https://ui.shadcn.com)
-
 ---
 
 <div align="center">
